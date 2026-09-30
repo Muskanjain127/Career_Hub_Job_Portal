@@ -32,7 +32,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://job-portal-pearl-eight.vercel.app",
+  
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
