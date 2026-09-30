@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
 
@@ -8,6 +8,14 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [location, setLocation] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const closeMenuOnScroll = () => setMobileMenuOpen(false);
+    window.addEventListener("scroll", closeMenuOnScroll, { passive: true });
+    return () => window.removeEventListener("scroll", closeMenuOnScroll);
+  }, [mobileMenuOpen]);
 
   const handleSearch = () => {
     const params = new URLSearchParams();
