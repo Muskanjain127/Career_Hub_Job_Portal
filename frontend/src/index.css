@@ -1,0 +1,249 @@
+:root {
+  --text: #53685D;
+  --text-h: #183B35;
+  --bg: #F7F4EA;
+  --border: #D8E1D8;
+  --code-bg: #EDF1E9;
+  --accent: #2F6753;
+  --accent-bg: rgba(47, 103, 83, 0.1);
+  --accent-border: rgba(47, 103, 83, 0.5);
+  --accent-yellow: #C49453;
+  --accent-yellow-bg: rgba(196, 148, 83, 0.14);
+  --social-bg: rgba(237, 241, 233, 0.75);
+  --shadow:
+    rgba(24, 59, 53, 0.14) 0 10px 15px -3px, rgba(24, 59, 53, 0.08) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+:root {
+  --ink: #202824;
+  --muted: #69736d;
+  --paper: #f6f6f1;
+  --surface: #fffefa;
+  --line: #dfe3dc;
+  --accent: #d75b3e;
+  --accent-dark: #a63d29;
+  --accent-soft: #f8e7df;
+  --sage: #dfe9df;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+  --heading: 'DM Serif Display', Georgia, serif;
+  color: var(--ink);
+  background: var(--paper);
+  font: 16px/1.55 var(--sans);
+  letter-spacing: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100svh;
+  margin: 0;
+  border: 0;
+  text-align: left;
+}
+
+#root :is(h1, h2, h3, h4) {
+  color: var(--ink);
+  font-family: var(--heading);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#root a {
+  color: var(--accent-dark);
+}
+
+#root :is(button, input, select, textarea) {
+  font: inherit;
+}
+
+#root :is(input, select, textarea) {
+  border-color: var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+#root :is(input, select, textarea):focus-visible,
+#root button:focus-visible,
+#root a:focus-visible {
+  outline: 3px solid rgba(215, 91, 62, 0.32);
+  outline-offset: 2px;
+}
+
+#root [class*="navbar"] {
+  border-color: var(--line) !important;
+  background: rgba(255, 254, 250, 0.96) !important;
+  box-shadow: 0 1px 0 rgba(32, 40, 36, 0.03) !important;
+  color: var(--ink) !important;
+}
+
+#root [class*="navbar"] a {
+  color: var(--ink) !important;
+}
+
+#root [class*="page"] {
+  background-color: var(--paper) !important;
+  color: var(--ink);
+}
+
+#root [class*="card"] {
+  border-color: var(--line) !important;
+  border-radius: 5px !important;
+  background-color: var(--surface) !important;
+  box-shadow: 0 8px 24px rgba(32, 40, 36, 0.055) !important;
+}
+
+#root :is(button, [role="button"], [class*="-btn"], [class*="button"]) {
+  border-radius: 4px;
+  font-family: var(--sans);
+  letter-spacing: 0;
+}
+
+#root table {
+  border-collapse: collapse;
+  color: var(--ink);
+}
+
+#root th {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+#root :is(th, td) {
+  border-color: var(--line) !important;
+}
+
+@media (max-width: 700px) {
+  #root [class*="container"] {
+    max-width: 100%;
+  }
+
+  #root table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.ui-loading-spinner {
+  display: inline-block;
+  flex: 0 0 auto;
+  border: 3px solid rgba(215, 91, 62, 0.2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: ui-spinner-rotate 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+.ui-loading-screen {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+}
+
+@keyframes ui-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

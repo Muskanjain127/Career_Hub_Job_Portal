@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Career Hub</title>
+  <rect width="64" height="64" rx="15" fill="#323E37"/>
+  <text x="10" y="43" fill="#FFFEFA" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">C</text>
+  <text x="33" y="43" fill="#D75B3E" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">H</text>
+  <rect x="13" y="49" width="38" height="3" rx="1.5" fill="#FFFEFA" opacity="0.9"/>
+</svg>
