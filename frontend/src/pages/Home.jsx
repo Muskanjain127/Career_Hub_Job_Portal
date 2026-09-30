@@ -807,6 +807,10 @@ const Home = () => {
             grid-template-columns: 1fr;
           }
 
+          .search-button {
+            min-height: 45px;
+          }
+
           .recruiter-card {
             padding: 32px 20px;
           }
