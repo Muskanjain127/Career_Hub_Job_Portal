@@ -287,7 +287,7 @@ const Profile = () => {
   // Resume URL
   // ==========================================
   const resumeUrl = profile.resume
-    ? `https://career-hub-ege3.onrender.com/${profile.resume}`
+    ? `https://career-hub-ege3.onrender.com${profile.resume}`
     : "";
 
   // ==========================================
