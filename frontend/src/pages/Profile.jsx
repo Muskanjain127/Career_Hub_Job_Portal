@@ -287,7 +287,7 @@ const Profile = () => {
   // Resume URL
   // ==========================================
   const resumeUrl = profile.resume
-    ? `http://localhost:8001${profile.resume}`
+    ? `import.meta.env.VITE_API_URL${profile.resume}`
     : "";
 
   // ==========================================
