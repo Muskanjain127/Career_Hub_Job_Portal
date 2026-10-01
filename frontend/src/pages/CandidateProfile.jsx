@@ -20,7 +20,7 @@ const CandidateProfile = () => {
   // BACKEND URL
   // ========================================
 
-  const BACKEND_URL = `https://career-hub-ege3.onrender.com/`;
+  const BACKEND_URL = "https://career-hub-ege3.onrender.com/";
 
   // ========================================
   // FETCH CANDIDATE PROFILE
