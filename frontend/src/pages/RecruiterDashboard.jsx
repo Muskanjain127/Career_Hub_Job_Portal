@@ -1036,7 +1036,7 @@ const RecruiterDashboard = () => {
 
                             {application.resume ? (
                               <a
-                                href={`https://career-hub-ege3.onrender.com/${application.resume}`}
+                                href={`https://career-hub-ege3.onrender.com${application.resume}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="resume-btn"
