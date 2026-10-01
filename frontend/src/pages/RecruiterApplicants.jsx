@@ -39,7 +39,7 @@ const RecruiterApplicants = () => {
 
   const limit = 10;
 
-  const backendUrl = "http://localhost:8001";
+  const backendUrl = "https://career-hub-ege3.onrender.com/";
 
   // ========================================
   // FETCH RECRUITER JOBS
